@@ -12,56 +12,51 @@ class DummyProduct{
 List<DummyProduct>products = [
   DummyProduct(
       name: "product A",
-      image: "a1.jpg",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
       name: "product A",
-      image: "",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
       name: "product A",
-      image: "",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
       name: "product A",
-      image: "",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
       name: "product A",
-      image: "",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
       name: "product A",
-      image: "",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
       name: "product A",
-      image: "",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
       name: "product A",
-      image: "",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
-  DummyProduct(
-      name: "product A",
-      image: "",
-      price: 100,
-      cart: 0
-  ),
+
 ];

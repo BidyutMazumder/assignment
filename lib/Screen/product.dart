@@ -1,6 +1,7 @@
 import 'package:assignment/Models/model_class.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 
 class Product extends StatefulWidget {
   const Product({Key? key}) : super(key: key);
@@ -21,48 +22,138 @@ class _ProductState extends State<Product> {
           padding:
               const EdgeInsets.only(left: 15, top: 20, right: 0, bottom: 15),
           child: Container(
-            height: S_height * .2,
-            color: Colors.black26,
-          ),
+            child: ListView(
+              scrollDirection: Axis.,
+              children: [
+                Container(
+                  height: S_height *2,
+                  child: Column(
+                    children: [
+                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
+                      SizedBox(height: 20,),
+                      Text("Category 1"),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: S_height *2,
+                  child: Column(
+                    children: [
+                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
+                      SizedBox(height: 20,),
+                      Text("Category 1"),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: S_height *2,
+                  child: Column(
+                    children: [
+                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
+                      SizedBox(height: 20,),
+                      Text("Category 1"),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: S_height *2,
+                  child: Column(
+                    children: [
+                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
+                      SizedBox(height: 20,),
+                      Text("Category 1"),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: S_height *2,
+                  child: Column(
+                    children: [
+                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
+                      SizedBox(height: 20,),
+                      Text("Category 1"),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: S_height *2,
+                  child: Column(
+                    children: [
+                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
+                      SizedBox(height: 20,),
+                      Text("Category 1"),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: S_height *2,
+                  child: Column(
+                    children: [
+                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
+                      SizedBox(height: 20,),
+                      Text("Category 1"),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          )
         ),
         Padding(
           padding:
               const EdgeInsets.only(left: 10, top: 10, right: 10, bottom: 15),
           child: Container(
             height: S_height * .6,
-            color: Colors.blueGrey,
             child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 4.0,
-                  mainAxisSpacing: 4.0,
-                ),
-                itemCount: products.length,
-                itemBuilder: (BuildContext ctx, index){
-                  return Padding(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 4.0,
+                mainAxisSpacing: 4.0,
+              ),
+              itemCount: products.length,
+              itemBuilder: (BuildContext ctx, index) {
+                return Container(
+                  child: Padding(
                     padding: const EdgeInsets.all(15.0),
-                    child: Container(
-                      color: Colors.white,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset("assets/a1.jpg"),
-                          Text("${products[index].name}"),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Image.network("${products[index].image}"),
+                        ),
+                        SizedBox(height: 20,),
+                        Expanded(
+                          flex: 1,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("${products[index].price}"),
-                              TextButton(
-                                onPressed: () {},
-                                child: Icon(Icons.add,color: Colors.black,),
+                              Text("${products[index].name}"),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("${products[index].price}"),
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: Icon(
+                                      Icons.shopping_cart,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  );
-                },
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.black12,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                );
+              },
             ),
           ),
         ),
