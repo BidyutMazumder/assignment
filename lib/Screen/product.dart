@@ -15,95 +15,91 @@ class _ProductState extends State<Product> {
   Widget build(BuildContext context) {
     var S_height = MediaQuery.of(context).size.height;
     var S_width = MediaQuery.of(context).size.width;
-
     return Column(
       children: [
         Padding(
-          padding:
-              const EdgeInsets.only(left: 15, top: 20, right: 0, bottom: 15),
-          child: Container(
-            child: ListView(
-              scrollDirection: Axis.,
-              children: [
-                Container(
-                  height: S_height *2,
-                  child: Column(
-                    children: [
-                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
-                      SizedBox(height: 20,),
-                      Text("Category 1"),
-                    ],
+            padding:
+                const EdgeInsets.only(left: 15, top: 20, right: 0, bottom: 15),
+            child: Container(
+              height: S_height * .2,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+                          height: S_height * .1,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        TextButton(onPressed: () {}, child: Text("category1"))
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  height: S_height *2,
-                  child: Column(
-                    children: [
-                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
-                      SizedBox(height: 20,),
-                      Text("Category 1"),
-                    ],
+                  SizedBox(
+                    width: 10,
                   ),
-                ),
-                Container(
-                  height: S_height *2,
-                  child: Column(
-                    children: [
-                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
-                      SizedBox(height: 20,),
-                      Text("Category 1"),
-                    ],
+                  Container(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+                          height: S_height * .1,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text("Category 1"),
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  height: S_height *2,
-                  child: Column(
-                    children: [
-                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
-                      SizedBox(height: 20,),
-                      Text("Category 1"),
-                    ],
+                  SizedBox(
+                    width: 10,
                   ),
-                ),
-                Container(
-                  height: S_height *2,
-                  child: Column(
-                    children: [
-                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
-                      SizedBox(height: 20,),
-                      Text("Category 1"),
-                    ],
+                  Container(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+                          height: S_height * .1,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text("Category 1"),
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  height: S_height *2,
-                  child: Column(
-                    children: [
-                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
-                      SizedBox(height: 20,),
-                      Text("Category 1"),
-                    ],
+                  SizedBox(
+                    width: 10,
                   ),
-                ),
-                Container(
-                  height: S_height *2,
-                  child: Column(
-                    children: [
-                      Image.network("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"),
-                      SizedBox(height: 20,),
-                      Text("Category 1"),
-                    ],
+                  Container(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+                          height: S_height * .1,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text("Category 1"),
+                      ],
+                    ),
                   ),
-                )
-              ],
+
+                ],
+              ),
             ),
-          )
         ),
         Padding(
           padding:
               const EdgeInsets.only(left: 10, top: 10, right: 10, bottom: 15),
           child: Container(
-            height: S_height * .6,
+            height: S_height * .55,
             child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
@@ -121,7 +117,9 @@ class _ProductState extends State<Product> {
                           flex: 1,
                           child: Image.network("${products[index].image}"),
                         ),
-                        SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                         Expanded(
                           flex: 1,
                           child: Column(

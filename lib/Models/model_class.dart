@@ -60,3 +60,48 @@ List<DummyProduct>products = [
   ),
 
 ];
+
+List<DummyProduct>products1 = [
+  DummyProduct(
+      name: "product b",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      price: 150,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product b",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      price: 150,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product b",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      price: 150,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product b",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      price: 150,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product b",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      price: 150,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product b",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      price: 150,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product b",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      price: 150,
+      cart: 0
+  ),
+];
