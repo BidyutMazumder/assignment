@@ -35,7 +35,7 @@ class _ProductState extends State<Product> {
                         SizedBox(
                           height: 20,
                         ),
-                        TextButton(onPressed: () {}, child: Text("category1"))
+                        Text("category1"),
                       ],
                     ),
                   ),
@@ -132,7 +132,9 @@ class _ProductState extends State<Product> {
                                 children: [
                                   Text("${products[index].price}"),
                                   TextButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+
+                                    },
                                     child: Icon(
                                       Icons.shopping_cart,
                                       color: Colors.black,
@@ -146,7 +148,7 @@ class _ProductState extends State<Product> {
                       ],
                     ),
                   ),
-                  decoration: BoxDecoration(
+                    decoration: BoxDecoration(
                     color: Colors.black12,
                     borderRadius: BorderRadius.circular(20),
                   ),

@@ -1,5 +1,7 @@
 
 
+import 'package:flutter/cupertino.dart';
+
 class DummyProduct{
   String? name;
   String? image;
@@ -17,91 +19,61 @@ List<DummyProduct>products = [
       cart: 0
   ),
   DummyProduct(
-      name: "product A",
+      name: "product b",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+      price: 10,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product c",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+      price: 170,
+      cart: 0
+  ),
+  DummyProduct(
+      name: "product d",
       image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
       price: 100,
       cart: 0
   ),
   DummyProduct(
-      name: "product A",
+      name: "product e",
       image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
-      price: 100,
+      price: 70,
       cart: 0
   ),
   DummyProduct(
-      name: "product A",
+      name: "product Ae",
       image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
-      price: 100,
+      price: 50,
       cart: 0
   ),
   DummyProduct(
-      name: "product A",
+      name: "product h",
       image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
-      price: 100,
+      price: 120,
       cart: 0
   ),
   DummyProduct(
-      name: "product A",
+      name: "product k",
       image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
-      price: 100,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product A",
-      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
-      price: 100,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product A",
-      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
-      price: 100,
-      cart: 0
-  ),
-
-];
-
-List<DummyProduct>products1 = [
-  DummyProduct(
-      name: "product b",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-      price: 150,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product b",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-      price: 150,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product b",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-      price: 150,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product b",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-      price: 150,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product b",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-      price: 150,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product b",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-      price: 150,
-      cart: 0
-  ),
-  DummyProduct(
-      name: "product b",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-      price: 150,
+      price: 15,
       cart: 0
   ),
 ];
+
+class CartData{
+  String? name;
+  String? image;
+  int? price;
+  int? count;
+  CartData({this.name, this.image, this.price, this.count});
+}
+
+class CartFunction extends ChangeNotifier{
+  int index = 0;
+  void ad_list(String name, String image, int price, int count){
+
+
+  }
+}

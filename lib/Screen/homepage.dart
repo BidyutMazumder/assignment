@@ -1,5 +1,7 @@
+import 'package:assignment/Models/model_class.dart';
 import 'package:assignment/Screen/product.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'cart.dart';
 
 
@@ -20,6 +22,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final providerdata = Provider.of<CartFunction>(context);
     return Scaffold(
       appBar: AppBar(),
       drawer: Drawer(
@@ -88,13 +91,15 @@ class _HomePageState extends State<HomePage> {
         currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(
+              label: "",
               icon: Icon(Icons.home),
-              label: ""
+
 
           ),
           BottomNavigationBarItem(
+              label: "2",
               icon: Icon(Icons.add_shopping_cart),
-              label: ""
+
           ),
         ],
         onTap: (index) {

@@ -44,6 +44,7 @@ class _CartState extends State<Cart> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          SizedBox(height: 15,),
                           Text(
                             "Product Name",
                             style: TextStyle(
