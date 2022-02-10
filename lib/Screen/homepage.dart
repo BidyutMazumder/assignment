@@ -24,7 +24,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final providerdata = Provider.of<CartFunction>(context);
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Assignment"),
+        centerTitle: true,
+      ),
       drawer: Drawer(
         child: Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
@@ -38,6 +41,7 @@ class _HomePageState extends State<HomePage> {
                 child: OutlinedButton(
                   onPressed: () {
                     setState(() {
+                      Navigator.of(context).pop();
                       _currentIndex = 0;
                       print(_currentIndex);
                     });
@@ -64,6 +68,7 @@ class _HomePageState extends State<HomePage> {
                 child: OutlinedButton(
                   onPressed: () {
                     setState(() {
+                      Navigator.of(context).pop();
                       _currentIndex = 1;
                       print(_currentIndex);
                     });
