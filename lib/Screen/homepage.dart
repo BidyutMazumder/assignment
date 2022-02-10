@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
 
           ),
           BottomNavigationBarItem(
-              label: "2",
+              label: providerdata.cart_length.toString(),
               icon: Icon(Icons.add_shopping_cart),
 
           ),
